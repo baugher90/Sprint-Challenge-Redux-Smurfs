@@ -1,4 +1,6 @@
 import React from 'react'
+import { addSmurf } from '../actions';
+import { connect } from 'react-redux';
 
 class SmurfForm extends React.Component{
     state = {
@@ -49,4 +51,7 @@ class SmurfForm extends React.Component{
     }
 }
 
-export default SmurfForm;
+export default connect(
+    null,
+    { addSmurf }
+    )(SmurfForm);

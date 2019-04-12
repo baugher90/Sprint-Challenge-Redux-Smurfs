@@ -5,10 +5,10 @@ const Smurf = props =>{
     return (
         <div key={props.index}>
        
-            <h1>{console.log(props)}Name: {props.name}</h1>
+            <h1>{console.log(props)}Name: {props.props.name}</h1>
             
-            <p>Age: {props.age}</p>
-            <p>Heaight: {props.height}</p>
+            <p>Age: {props.props.age}</p>
+            <p>Heaight: {props.props.height}</p>
         </div>
     )
 }
